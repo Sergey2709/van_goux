@@ -1,0 +1,89 @@
+.consultation {
+  margin-top: 60px;
+  padding: 60px;
+  width: 640px;
+  height: 460px;
+  background-color: #1968fc;
+
+  @include for-large-up {
+    margin-top: 120px;
+    padding: 0 0 0 120px;
+    width: 1440px;
+    height: 450px;
+    position: relative;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    @include for-large-up {
+      margin: 80px 160px 0 40px;
+      width: 1120px;
+      height: 60px;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    margin-top: 38px;
+    height: 80px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+
+    @include for-large-up {
+      width: 640px;
+      margin-top: 48px;
+      margin-left: 40px;
+      padding-right: 20px;
+    }
+  }
+
+  &__button {
+    margin-top: 40px;
+    width: 320px;
+    height: 50px;
+    background: #ffffff;
+    box-shadow: 4px 4px 20px rgba(255, 255, 255, 0.4);
+    border: none;
+    display: flex;
+    justify-content: center;
+
+    @include for-large-up {
+      margin-left: 40px;
+    }
+
+    &-text {
+      height: 50px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+      color: #1968fc;
+    }
+  }
+
+  &__illustration {
+    display: none;
+
+    @include for-large-up {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: -1px;
+    }
+  }
+}

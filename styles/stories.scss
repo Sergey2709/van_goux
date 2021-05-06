@@ -1,0 +1,106 @@
+.stories {
+  margin: 60px 60px 0 60px;
+  width: 520px;
+  height: 719px;
+
+  @include for-large-up {
+    margin: 0px;
+    padding: 120px 160px 120px 120px;
+    width: 1440px;
+    height: 660px;
+    background-color: #fbfbfb;
+  }
+
+  &__title {
+    margin: 0;
+    width: 520px;
+    height: 60px;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #11223f;
+
+    @include for-large-up {
+      width: 1120px;
+      margin: 0 0 0 40px;
+    }
+  }
+}
+
+.story-card {
+  margin-top: 40px;
+  position: relative;
+  width: 520px;
+  height: 270px;
+
+  @include for-large-up {
+    display: inline-block;
+    width: 480px;
+    height: 300px;
+    margin-top: 48px;
+  }
+
+  &-first {
+    margin-top: 38px;
+
+    @include for-large-up {
+      margin: 48px 150px 0 40px;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 4px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-left: 60px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 40px;
+    color: #111111;
+
+    @include for-large-up {
+      width: 420px;
+    }
+  }
+
+  &__description1 {
+    margin: 0;
+    height: 210px;
+    margin: 20px 0 0 60px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+
+    @include for-large-up {
+      width: 420px;
+      height: 240px;
+    }
+  }
+
+  &__description2 {
+    margin: 0;
+    height: 240px;
+    margin: 19px 0 0 60px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+
+    @include for-large-up {
+      width: 420px;
+      height: 240px;
+    }
+  }
+}
+
+.text-decoration {
+  text-decoration: underline;
+}

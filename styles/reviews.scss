@@ -1,0 +1,88 @@
+.reviews {
+  margin-top: 168px;
+
+  @include for-large-up {
+    margin: 160px auto 0 auto;
+    display: flex;
+    width: 1120px;
+    height: 280px;
+  }
+}
+
+.review {
+  width: 540px;
+  height: 280px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  padding: 40px;
+  position: relative;
+  background-color: #ffffff;
+
+  @include for-large-up {
+    margin: 0;
+    box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+  }
+
+  &__quote {
+    position: absolute;
+    right: 34px;
+    top: 40px;
+    width: 60px;
+    height: 46px;
+
+    background: url(Image.png);
+    filter: drop-shadow(1px 5px 8px #f0f2f4);
+  }
+
+  &__head {
+    height: 100px;
+    width: 100%;
+    display: flex;
+
+    &-information {
+      width: 100%;
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &-name {
+      margin: 0;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 30px;
+      color: #11223f;
+    }
+
+    &-position {
+      margin: 0;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 30px;
+      color: #1967facc;
+    }
+  }
+
+  &__description {
+    margin-top: 40px;
+    width: 460px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #11223f;
+
+    &-text {
+      margin: 0;
+    }
+  }
+}
+
+.review:last-child {
+  margin-bottom: 0;
+
+  @include for-large-up {
+    margin-left: 40px;
+  }
+}
