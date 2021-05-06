@@ -1,10 +1,10 @@
-﻿**Startup Project**
+﻿**VanGoux Project**
 
 
 
-[Site link](https://sergey2709.github.io/startup/)
+[Site link](https://sergey2709.github.io/van_goux/)
 
-**Layout’s breakpoint – 1400px**
+**Layout’s breakpoint – 1024px**
 
 The tech stack is:
 
